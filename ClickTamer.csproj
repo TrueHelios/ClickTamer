@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>ClickTamer.ico</ApplicationIcon>
+    <AssemblyName>ClickTamer</AssemblyName>
+    <AssemblyTitle>ClickTamer</AssemblyTitle>
+    <Product>ClickTamer</Product>
+    <Description>Continuous silent audio playback to reduce DAC clicks</Description>
+    <RootNamespace>ClickTamer</RootNamespace>
+    <Version>1.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <InformationalVersion>1.0</InformationalVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="3.2.0" />
+  </ItemGroup>
+</Project>

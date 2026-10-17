@@ -1,0 +1,8 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio / VS Code local files
+.vs/
+*.user
+*.suo
