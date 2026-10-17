@@ -24,41 +24,10 @@ I use a xDuoo XD-05 Basic, and ClickTamer completely eliminated the clicks on my
 - Windows 10 or later.
 - .NET 10 SDK to build the project.
 
-## Build
-
-Open the project folder in a terminal and run:
-
-```powershell
-dotnet restore
-dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
-```
-
-The executable will be created in `bin\Release\net10.0-windows\win-x64\publish\ClickTamer.exe`.
-
 ## Files and settings
 
 - Settings: `%APPDATA%\ClickTamer\config.json`
 - Log: `%LOCALAPPDATA%\ClickTamer\startup.log`
-- Application icon: `ClickTamer.ico`
-- Source images: `assets/ClickTamer.png` and `assets/ClickTamer-1024.png`
-
-On the first launch, click suppression and both startup options are disabled. ClickTamer saves your settings when you change them and uses its own configuration and log files.
-
-## Startup behavior
-
-When enabled, the startup option creates a shortcut in your Windows Startup folder. It does not copy the executable there. If you move ClickTamer to another folder, run it once from the new location to update the shortcut.
-
-The "Start minimized" option works for both manual launches and Windows startup. When enabled, the main window stays hidden until you open it from the system tray.
-
-## Version
-
-The current application version is `1.0`. Version information is stored in `ClickTamer.csproj`.
-
-## Theme
-
-On the first launch, ClickTamer follows your Windows app theme. This continues until you switch the theme manually. After that, your choice is saved and will not change when you change the Windows theme.
-
----
 
 # ClickTamer 1.0
 
@@ -86,36 +55,7 @@ ClickTamer постоянно поддерживает беззвучный ау
 - Windows 10 или новее.
 - .NET 10 SDK для сборки проекта.
 
-## Сборка
-
-Открой папку проекта в терминале и выполни:
-
-```powershell
-dotnet restore
-dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
-```
-
-Готовый файл появится в `bin\Release\net10.0-windows\win-x64\publish\ClickTamer.exe`.
-
 ## Файлы и настройки
 
 - Настройки: `%APPDATA%\ClickTamer\config.json`
 - Журнал: `%LOCALAPPDATA%\ClickTamer\startup.log`
-- Иконка приложения: `ClickTamer.ico`
-- Исходные изображения: `assets/ClickTamer.png` и `assets/ClickTamer-1024.png`
-
-При первом запуске подавление щелчков и обе настройки автозапуска выключены. ClickTamer сохраняет изменения настроек и использует только собственные файлы конфигурации и журнала.
-
-## Автозапуск
-
-При включении автозапуска программа создаёт ярлык в папке автозагрузки Windows. Сам EXE туда не копируется. Если переместить ClickTamer в другую папку, запусти его один раз из нового расположения, чтобы обновить ярлык.
-
-Настройка «Запускать свёрнутым» действует и при ручном запуске, и при запуске Windows. Если она включена, главное окно остаётся скрытым до открытия через значок в системном трее.
-
-## Версия
-
-Текущая версия приложения: `1.0`. Информация о версии находится в `ClickTamer.csproj`.
-
-## Тема
-
-При первом запуске ClickTamer использует тему приложений Windows. Это продолжается до первого ручного переключения темы. После этого программа запоминает выбор, и изменение темы Windows больше на неё не влияет.
